@@ -1,0 +1,8 @@
+        cores_num = multiprocessing.cpu_count()
+        process_pool = multiprocessing.Pool(processes=cores_num)
+        # 初始化所有进程的保存列表
+        for xx, xx in xx:
+          process_pool.apply_async(self.taskStart, (args,))
+        # 等待进程全部运行完成
+        process_pool.close()
+        process_pool.join()
